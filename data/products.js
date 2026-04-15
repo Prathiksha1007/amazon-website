@@ -11,36 +11,36 @@ export function getProduct(productId) {
 }
 
 export const products = [
-  {
-    id: "id1",
-    image: "images/products/backpack.jpg",
-    name: "Backpack",
-    rating: {
-      stars: 4.5,
-      count: 878
-    },
-    priceCents: 790,
-    keywords: [
-      "bag",
-      "sports",
-      "travel"
-    ]
-  },
-  {
-    id: "id2",
-    image: "images/products/umbrella.jpg",
-    name: "Umbrella",
-    rating: {
-      stars: 3.5,
-      count: 78
-    },
-    priceCents: 399,
-    keywords: [
-      "rain",
-      "umbrella",
-      "travel"
-    ]
-  },
+  // {
+  //   id: "id1",
+  //   image: "images/products/backpack.jpg",
+  //   name: "Backpack",
+  //   rating: {
+  //     stars: 4.5,
+  //     count: 878
+  //   },
+  //   priceCents: 790,
+  //   keywords: [
+  //     "bag",
+  //     "sports",
+  //     "travel"
+  //   ]
+  // },
+  // {
+  //   id: "id2",
+  //   image: "images/products/umbrella.jpg",
+  //   name: "Umbrella",
+  //   rating: {
+  //     stars: 3.5,
+  //     count: 78
+  //   },
+  //   priceCents: 399,
+  //   keywords: [
+  //     "rain",
+  //     "umbrella",
+  //     "travel"
+  //   ]
+  // },
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
