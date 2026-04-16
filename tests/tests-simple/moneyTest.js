@@ -33,3 +33,11 @@ if(formatCurrency(200.5) === '2.01') {
 } else {
     console.log('failed');
 }
+
+console.log('checks for negative number');
+
+if(formatCurrency(-999) === '-9.99') {
+    console.log('passed');
+} else {
+    console.log('failed');
+}
