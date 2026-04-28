@@ -8,14 +8,22 @@ import { loadProducts, loadProductsFetch } from '../data/products.js';
 import { loadCart } from '../data/cart.js';
 
 async function loadPage(){
-    await loadProductsFetch();
+    try{
+        // throw 'error1';
 
-    const value = await new Promise((resolve) => {
-        loadCart(() => {
-            resolve('value3'); //the value 3 gets stored in the variable value.
+        await loadProductsFetch();
+
+        const value = await new Promise((resolve, reject) => {
+            // throw 'error2';
+            loadCart(() => {
+                // reject('error3');
+                resolve('value3'); //the value 3 gets stored in the variable value.
+            });
         });
-    });
-
+    } catch(error){
+        console.log('unexpected error. please try again later.');
+    }
+    
     renderOrderSummary();
     renderPaymentSummary();
     renderCheckoutHeader();
