@@ -7,22 +7,34 @@ import {renderCheckoutHeader} from './checkout/checkoutHeader.js'
 import { loadProducts, loadProductsFetch } from '../data/products.js';
 import { loadCart } from '../data/cart.js';
 
+async function loadPage(){
+    await loadProductsFetch();
 
-Promise.all([
-    loadProductsFetch(),
-    new Promise((resolve) => {
+    const value = await new Promise((resolve) => {
         loadCart(() => {
-            resolve();
+            resolve('value3'); //the value 3 gets stored in the variable value.
         });
-    })
-]).then((values) => {
-    console.log(values);
+    });
+
     renderOrderSummary();
     renderPaymentSummary();
     renderCheckoutHeader();
-});
+}
+loadPage();
 
-
+// Promise.all([
+//     loadProductsFetch(),
+//     new Promise((resolve) => {
+//         loadCart(() => {
+//             resolve();
+//         });
+//     })
+// ]).then((values) => {
+//     console.log(values);
+//     renderOrderSummary();
+//     renderPaymentSummary();
+//     renderCheckoutHeader();
+// });
 
 // new Promise((resolve) => {
 //     loadProducts(() => {
