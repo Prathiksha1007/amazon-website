@@ -1,2 +1,3 @@
 # amazon-website
-Amazon-style e-commerce website built while learning JavaScript. Features product listings, dynamic rendering, add-to-cart, and real-time cart updates. Demonstrates DOM manipulation, event handling, and UI updates without page reloads.
+
+Amazon-style e-commerce website - a front-end project built while learning JavaScript, focused on recreating the core shopping experience of a real online store. It includes features like product listing, dynamic rendering of items, add-to-cart functionality, and real-time cart updates based on user actions. The project demonstrates how JavaScript can control the entire flow, handling user interactions, updating the UI without reloading the page, and managing data such as cart items. It also reflects understanding of key concepts like DOM manipulation, event handling, making it a practical simulation of how real-world e-commerce platforms function on the client side.
